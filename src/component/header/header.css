@@ -1,0 +1,89 @@
+header {
+  height: 100vh;
+  padding-top: 7rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.header_container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+/* ========================== CTA  ================================== */
+
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+/* ====================== SOCIALS =================================== */
+
+.header__social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  bottom: 3rem;
+  left: 0;
+}
+.header__social::after {
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background: var(--clr-primary);
+}
+
+.header__social a:hover {
+  transform: scale(1.5);
+  transition: all 0.1s ease-in-out;
+}
+
+/* ================= ME ================ */
+
+.me {
+  background: linear-gradient(var(--clr-primary), transparent);
+  width: 22rem;
+  height: 20rem;
+  position: absolute;
+  left: calc(50% - 11rem);
+  transform-origin: calc(50% - 11rem);
+  top: 24rem;
+  border-radius: 12rem 12rem 0 0;
+  overflow: hidden;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+}
+
+/* Scroll_down */
+
+.scroll_down {
+  position: absolute;
+  right: 1px;
+  bottom: 5rem;
+  transform: rotate(90deg);
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    top: -4rem;
+    height: 100vh;
+  }
+  .me {
+    position: absolute;
+    left: calc(65% - 10rem);
+    width: 12rem;
+    top: 60vh;
+  }
+
+  .header__social {
+    display: none;
+  }
+
+  .scroll_down {
+    display: none;
+  }
+}
