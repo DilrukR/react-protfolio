@@ -74,7 +74,7 @@ header {
   }
   .me {
     position: absolute;
-    left: calc(65% - 10rem);
+    left: calc(64% - 10rem);
     width: 12rem;
     top: 60vh;
   }
