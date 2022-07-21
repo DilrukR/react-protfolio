@@ -3,6 +3,7 @@ import CTA from "./CTA";
 import "./header.css";
 import Me from "../../Assest/me.png";
 import Social from "./headersocials";
+import { Button } from "react-bootstrap";
 
 const header = () => {
   return (
@@ -22,6 +23,8 @@ const header = () => {
       <a href='#contact' className='scroll_down'>
         Scroll Down
       </a>
+
+      <Button variant='primary'>Hello</Button>
     </header>
   );
 };

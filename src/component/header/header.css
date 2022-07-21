@@ -74,9 +74,9 @@ header {
   }
   .me {
     position: absolute;
-    left: calc(64% - 10rem);
+    left: calc(65% - 10rem);
     width: 12rem;
-    top: 60vh;
+    top: 68vh;
   }
 
   .header__social {
