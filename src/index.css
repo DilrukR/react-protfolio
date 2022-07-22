@@ -8,6 +8,7 @@
   outline: 0;
   list-style: none;
   text-decoration: none;
+  scrollbar-width: none;
 }
 
 :root {
@@ -29,7 +30,8 @@ html {
   scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar {
+::-webkit-scrollbar,
+::-moz-scrollbar {
   display: none;
 }
 
@@ -62,6 +64,7 @@ h1 {
 
 section {
   margin-top: 8rem;
+  height: 100vh;
 }
 
 section > h2,
@@ -103,6 +106,7 @@ a:hover {
   background: var(--clr-white);
   color: var(--clr-bg);
   border-color: transparent;
+  outline: #2c2c6c;
 }
 
 .btn-primary {
