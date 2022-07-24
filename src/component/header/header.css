@@ -67,6 +67,12 @@ header {
   transform: rotate(90deg);
 }
 
+@media screen and (max-width: 1024px) {
+  .me {
+    left: calc(50% - 11rem);
+  }
+}
+
 @media screen and (max-width: 768px) {
   header {
     top: -4rem;
@@ -74,7 +80,7 @@ header {
   }
   .me {
     position: absolute;
-    left: calc(65% - 10rem);
+    left: calc(50% - 5rem);
     width: 12rem;
     top: 68vh;
   }
